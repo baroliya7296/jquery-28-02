@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <button type="button" id="btn">Click Me!</button>
+    </center>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     alert("Hi Mr_Baroliya")
+        // })
+
+        //   **************confirm box***************
+
+         $("#btn").click(function(){
+            
+        //     if(confirm('Are you sure Logout ?'))
+        // {
+        //     alert('Logout successfully')
+        //     window.location='https://www.flipkart.com'
+        // }
+        // else
+        // {
+        //     window.location='';
+        // }
+        
+        // ******************user push input in promp***************
+        
+        $(document).ready(function(){
+            
+            var b=parseInt(prompt('Enter a value :'));
+            var a=parseInt(prompt('Enter a value :'));
+            var c=a+b;
+            alert('The additional of numbers is :'+c)
+             window.location='https://www.apple.com'
+        })
+    })
+    </script>
+</body>
+</html>
