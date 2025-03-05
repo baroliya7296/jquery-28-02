@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show hide toggle effects</title>
+    <script type="text/javascript" src="js/min-jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // ****************for hide effects***************
+
+            $("#btn1").click(function(){
+
+                // $(".info").hide();
+                // $(".info").hide(1500);
+                // $(".info").hide(4000);
+                $(".info").hide("slow");
+                // $(".info").hide("fast");
+            });
+
+             // ****************for hide effects***************
+
+             $("#btn2").click(function(){
+
+                //  $(".info").show();
+                //  $(".info").show(1500);
+                 // $(".info").show(4000);
+                 $(".info").show("slow");
+                 // $(".info").show("fast");
+             });
+
+             // ****************for toggle effects***************
+
+             $("#btn3").click(function(){
+
+                 //  $(".info").toggle();
+                 //  $(".info").toggle(1500);
+                  // $(".info").toggle(4000);
+                  $(".info").toggle("slow");
+                  // $(".info").toggle("fast");
+             });
+
+            // ************button style************
+
+            $(".btn").css({padding:"7px",margin:"10px 20px",width:"100px",borderRadius:"24px",backgroundColor:"#8282df",color:"white",fontSize:"18px",fontWeight:"600"})
+        })
+    </script>
+    <!-- <style>
+        .btn{
+            padding: 7px;
+            margin: 10px 20px;
+            width: 100px;
+            border-radius: 24px
+        }
+    </style> -->
+</head>
+<body>
+    <div class="effects">
+        <center>
+            <button type="button" id="btn1" class="btn">Hide</button>
+            <button type="button" id="btn2" class="btn">Show</button>
+            <button type="button" id="btn3" class="btn">Toggle</button>
+        </center>
+
+        <div class="info">  
+        <h1>Jquery effects</h1>
+        <p> jquery effects provides how to hide elements | show elements | toggle on elements</p>
+        
+        <h3>Types of jquery effects </h3>
+        <ul>
+        <li><a href="">Hide</a></li>
+        <li><a href="">Show</a></li>
+        <li><a href="">Toggle</a></li>
+        </ul>
+        </div>
+    </div>
+        
+</body>
+</html>
